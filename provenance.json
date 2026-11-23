@@ -1,0 +1,98 @@
+{
+  "testDate": "2026-11-23",
+  "platform": "Linux x64, Ubuntu container on WSL2, 6.6.114.1-microsoft-standard-WSL2",
+  "cpus": {
+    "service": "0-3",
+    "driver": "6-7",
+    "database": "4-5"
+  },
+  "workload": "32 persistent authenticated connections with one outstanding request each; same net10.0 application and ASP.NET Core 10.0.12 across all comparisons",
+  "minWorkers": 256,
+  "gcDynamicAdaptation": 0,
+  "release10": "4271d88e0aebf3d04f188f1334c2220d80555ef6",
+  "release11": "deae2e32bf0e018e09d64597b7c59b62b73bb3ce",
+  "decemberPackage": "11.0.0-alpha.1.26059.114",
+  "decemberBase": "891c183b22d023eea7bc4aa57dbc219d54852036",
+  "januaryPackage": "11.0.0-alpha.1.26065.110",
+  "januaryBase": "d120108fc5d4fce1e0fcf2897e39e9ad18c466bb",
+  "nightly": {
+    "version": "12.0.0-alpha.1.26573.102",
+    "vmr": "3619558858a84d291617f0d01d0b452b367f17eb",
+    "runtime": "4ab5617c35e2ad7950ffb32ff91a9975951cc165"
+  },
+  "december": {
+    "dec-pre": {
+      "commit": "0b723b3091814bcb89a3989f4cf4d7ae15c9fbca",
+      "files": {
+        "il.dll": "36512bc97c80632130a67e97325e6f3c03e92402b2ef7bf4f50a1064e204ae81",
+        "libclrjit.so": "77ba794eeb50a004c3a510286088803c26641aa0d91d14ac4ff52daa59ecade0",
+        "libcoreclr.so": "2def08dcef49667424acbba8dacd605ef33ef7c6ab0bf9b6cef9700dc116f6c9",
+        "libSystem.Native.so": "84e1d9db768416777558a1b1998f9f6235b4d0ae53f048bf3279afd4dcce8b32",
+        "System.Private.CoreLib.dll": "a8547a21b01d40c5415b42faff5ab808a54df7e7881f88131d902e35a4875234"
+      }
+    },
+    "dec-post": {
+      "commit": "421445ed64461414dc1e99c6716e81e0b1c51b44",
+      "files": {
+        "il.dll": "cef8acab6e7771b4bc4caabc35be4da4999e83aa74a0ef471dfd91af9e7905bb",
+        "libclrjit.so": "48b87ea049b0e7e4d4f3de85db16b5ab06d06e963f4a48b19e51579f702421d0",
+        "libcoreclr.so": "6bab2fa862ab74443121f0634b80db9aaf15605511af415a6e7b0e8eb834e7f4",
+        "libSystem.Native.so": "84e1d9db768416777558a1b1998f9f6235b4d0ae53f048bf3279afd4dcce8b32",
+        "System.Private.CoreLib.dll": "fe92fde20133f415acb44fed99f9a1dd0b28a987e77f5d9ad381296d9e07ca52"
+      }
+    }
+  },
+  "january": {
+    "parent": "c026ba8fc4dea8f194f5e0d1889145a59534fad8",
+    "commit": "c14473701d9106c7be977b25b90211b99231b54b"
+  },
+  "corelibs": {
+    "jan-pre": {
+      "il": "d7788309ada6cdd700a792f44c676c0f34630d03309a018e830e2e332f23b1cc",
+      "readyToRun": "4f2aba162b5a6f41315dc67cb3890b3efa21a5d3943a9ff21cad9b3c6aa4ebb4"
+    },
+    "jan-post": {
+      "il": "3d185ba71c1abdbd3695480d283198eddb2a988109a321e9c673c1a43d2a7496",
+      "readyToRun": "9fa5ec23d21605461987eae7c9179be34a7893e69ad5f61fd2648c97ae4731cf"
+    },
+    "jan-wait-only": {
+      "il": "47c57a98a4877a3515d537880ef76cc036abb7a825d643876db2757314254f91",
+      "readyToRun": "fddfe5b57947eb5d49058069389aa51ded636eeb6c5eb272ca57037873150da9"
+    },
+    "jan-prior-semaphore": {
+      "il": "52a0ee409872a84189bcaa3c045408461d800a25a1cdad5da59574d2a0329952",
+      "readyToRun": "fa4818cf7cbd41e75b3373d916ceae5ca644152540a9d38134d7e4a271d37556"
+    },
+    "unmodified": {
+      "il": "cd07ec91dbe015f88a5f73709fb1d080868623f6d6cb8101d355ade082e48ca3",
+      "readyToRun": "a482565026fb49b811b8d675d0ebc32866d2146dd84b87c7b10634a5626dc562"
+    },
+    "yield": {
+      "il": "94e5d6c89b3afd3b9632a8c636d2c0bea2928e76bb8925d706b6b3c4c1ba3e77",
+      "readyToRun": "4fcfe7cc0a5ff4c37817add3592477a0ded0e0bc63353aeb467c72edb6a0b74d"
+    },
+    "winbase": {
+      "il": "774b41d2fedf5a840d9a94b1f9bd807fabbb23cd23f14fd6bff4e2be341a9454",
+      "readyToRun": "e2e131710a2ecfb99de0a37687e080673d9fb2e875f5c018ec6ae5618db9b250"
+    },
+    "short-polls": {
+      "il": "e39a02bfec6ba81e6c61ddea5d538222a48756b9c5a98dbed42ce8723ab32072",
+      "readyToRun": "335dacc11a726e97233bda20e0addeef9a3b21baad875d8d2aea2ad770edfdd4"
+    },
+    "checked-yield": {
+      "il": "b4ee9505d85dcdbc87db66abc73ad7629f682ac4d214a87f287ce7587048c816",
+      "readyToRun": "5716ecbb2a7c11f3c2a15ae8cc9c5f4fbd0ee0b7f125cf98f62b52ee2427e64b"
+    },
+    "main-pre": {
+      "il": "ff59774208015d5de0d8783b824bf818ba9da8d15b59b67c4b4f8fb6c6c3edcf",
+      "readyToRun": "da4c6952a23fac69ab0c0ceec997a1f68adce9ce89761b53022f73089493c8fc"
+    },
+    "main-post": {
+      "il": "9151aed9e6b0f388bdda97039ab57db0c30e8d119691b014a81bcc1cdd314f52",
+      "readyToRun": "cacd7c71c8303170b35eecbfaa7acc55c1e40c83eb61943ef8b25865098f9809"
+    }
+  },
+  "fixedKestrel": {
+    "Microsoft.AspNetCore.Server.Kestrel.Core.dll": "37db1c74ddd000092618ea357f056dd4b56c0847791434ebe50d4de0390141a9"
+  }
+}

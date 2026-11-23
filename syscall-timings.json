@@ -1,0 +1,134 @@
+[
+  {
+    "arm": "winbase",
+    "transport": "ws",
+    "matched": 126057,
+    "cycles": 126129,
+    "ports": 32,
+    "readyRecvMeanUs": 35.21262815234378,
+    "readyRecvP50Us": 4.733,
+    "readyRecvP99Us": 223.92668000000006,
+    "recvMeanUs": 0.79743488263246
+  },
+  {
+    "arm": "winbase",
+    "transport": "http",
+    "matched": 171392,
+    "cycles": 171624,
+    "ports": 32,
+    "readyRecvMeanUs": 84.4857400870519,
+    "readyRecvP50Us": 57.17,
+    "readyRecvP99Us": 405.32697999999885,
+    "recvMeanUs": 0.8083785649271843
+  },
+  {
+    "arm": "checked-yield",
+    "transport": "ws",
+    "matched": 162780,
+    "cycles": 162883,
+    "ports": 32,
+    "readyRecvMeanUs": 24.00887147683991,
+    "readyRecvP50Us": 7.529,
+    "readyRecvP99Us": 186.41267999999994,
+    "recvMeanUs": 1.145834635704632
+  },
+  {
+    "arm": "checked-yield",
+    "transport": "http",
+    "matched": 203435,
+    "cycles": 203884,
+    "ports": 32,
+    "readyRecvMeanUs": 71.34054074274339,
+    "readyRecvP50Us": 50.227,
+    "readyRecvP99Us": 355.66946000000013,
+    "recvMeanUs": 1.1035945535429006
+  },
+  {
+    "arm": "jan-pre",
+    "transport": "ws",
+    "matched": 152492,
+    "cycles": 152685,
+    "ports": 32,
+    "readyRecvMeanUs": 11.91668742622564,
+    "readyRecvP50Us": 1.929,
+    "readyRecvP99Us": 108.54922999999984,
+    "recvMeanUs": 0.8105809222778899
+  },
+  {
+    "arm": "jan-pre",
+    "transport": "http",
+    "matched": 208653,
+    "cycles": 210331,
+    "ports": 32,
+    "readyRecvMeanUs": 20.80512575424269,
+    "readyRecvP50Us": 8.392,
+    "readyRecvP99Us": 166.36728000000167,
+    "recvMeanUs": 1.2023597887401571
+  },
+  {
+    "arm": "jan-post",
+    "transport": "ws",
+    "matched": 99934,
+    "cycles": 99979,
+    "ports": 32,
+    "readyRecvMeanUs": 28.863735985750598,
+    "readyRecvP50Us": 12.6035,
+    "readyRecvP99Us": 147.16935999999998,
+    "recvMeanUs": 0.7266028778994136
+  },
+  {
+    "arm": "jan-post",
+    "transport": "http",
+    "matched": 167843,
+    "cycles": 168036,
+    "ports": 32,
+    "readyRecvMeanUs": 28.216001179673864,
+    "readyRecvP50Us": 11.22,
+    "readyRecvP99Us": 188.61887999999826,
+    "recvMeanUs": 0.7673954886411708
+  },
+  {
+    "arm": "dec-pre",
+    "transport": "ws",
+    "matched": 197821,
+    "cycles": 198015,
+    "ports": 32,
+    "readyRecvMeanUs": 11.482636767582818,
+    "readyRecvP50Us": 1.837,
+    "readyRecvP99Us": 62.39979999999964,
+    "recvMeanUs": 0.8215328807356144
+  },
+  {
+    "arm": "dec-pre",
+    "transport": "http",
+    "matched": 226322,
+    "cycles": 228516,
+    "ports": 32,
+    "readyRecvMeanUs": 17.653470232677332,
+    "readyRecvP50Us": 7.553,
+    "readyRecvP99Us": 125.88769000000009,
+    "recvMeanUs": 1.0432466529988247
+  },
+  {
+    "arm": "dec-post",
+    "transport": "ws",
+    "matched": 109413,
+    "cycles": 109598,
+    "ports": 32,
+    "readyRecvMeanUs": 28.242084277005475,
+    "readyRecvP50Us": 7.347,
+    "readyRecvP99Us": 196.69792000000075,
+    "recvMeanUs": 1.3231106541270234
+  },
+  {
+    "arm": "dec-post",
+    "transport": "http",
+    "matched": 208449,
+    "cycles": 209931,
+    "ports": 32,
+    "readyRecvMeanUs": 26.309208645759874,
+    "readyRecvP50Us": 10.339,
+    "readyRecvP99Us": 175.75695999999976,
+    "recvMeanUs": 1.3629337199986569
+  }
+]

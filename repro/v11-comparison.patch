@@ -1,0 +1,18 @@
+diff --git i/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs w/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs
+index 446be68c4d1..5ca96cc8fc7 100644
+--- i/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs
++++ w/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs
+@@ -127,6 +127,13 @@ private bool WaitSlow(int timeoutMs)
+                         return true;
+                     }
+                 }
++
++                // Give runnable producers a chance to post work between capped spins.
++                // Check for an available signal before yielding and park once the budget is spent.
++                if (OperatingSystem.IsLinux() && spinsRemaining > 0 && iteration >= 8 && (iteration & 1) == 0)
++                {
++                    Thread.UninterruptibleSleep0();
++                }
+             }
+ 
+             return WaitNoSpin(timeoutMs);

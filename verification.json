@@ -1,0 +1,36 @@
+{
+  "source": {
+    "base": "6433d426c81f03f19f5f39c7ca6a88fc3e4be815",
+    "submitted": "6524b39b0871ca767e13460dd205520c38576c7f",
+    "tree": "e65a67125ac4c09699424457aedf787e00a4a95a"
+  },
+  "mainReleaseLinuxX64CoreLibBuild": {
+    "warnings": 0,
+    "errors": 0
+  },
+  "linuxX64NightlyThreadPoolSuite": {
+    "coreLibSha256": "cacd7c71c8303170b35eecbfaa7acc55c1e40c83eb61943ef8b25865098f9809",
+    "counts": {
+      "Passed": 68,
+      "NotExecuted": 2
+    },
+    "skipped": [
+      "System.Threading.ThreadPools.Tests.RegisteredWaitTests.SingleThreadedRegistrationPreservesTimeoutValidation",
+      "System.Threading.ThreadPools.Tests.ThreadPoolTests.ReadWriteAsyncTest"
+    ]
+  },
+  "freshPublicReleaseSourceBuildAndRun": {
+    "mode": "release-fix",
+    "coreLibSha256": {
+      "A": "99f9084125c54e80ff870837c604697c360baa9c758c7ef539de914c75f365f1",
+      "B": "3f3b27c98d71b7bd324c3354f1239e054170e390903f4fb88e832e6edf52a7b9"
+    },
+    "successfulSmokeRequests": {
+      "A/ws": 409326,
+      "A/json": 396822,
+      "B/ws": 633399,
+      "B/json": 648163
+    },
+    "note": "Short validation of the distributed source recipe. Timed comparisons are in the accompanying CSVs."
+  }
+}

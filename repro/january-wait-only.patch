@@ -1,0 +1,17 @@
+diff --git i/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs w/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs
+index 73464549ff9..b76e994c33c 100644
+--- i/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs
++++ w/src/libraries/System.Private.CoreLib/src/System/Threading/LowLevelLifoSemaphore.cs
+@@ -66,10 +66,10 @@ private bool WaitSlow(int timeoutMs)
+             // - it gives mild preference to the most recent spinners. We want LIFO here so that hot(er) threads keep running.
+             // - it is possible that spinning workers prevent non-pool threads from submitting more work to the pool,
+             //   so we want some workers to sleep earlier than others.
+-            uint spinCount = Environment.IsSingleProcessor ? 0 : _spinCount;
++            uint spinCount = Environment.IsSingleProcessor ? 0u : 70u;
+             for (uint iteration = 0; iteration < spinCount; iteration++)
+             {
+-                Backoff.Exponential(iteration);
++                LowLevelSpinWaiter.Wait((int)iteration, 10, false);
+ 
+                 Counts counts = _separated._counts;
+                 if (counts.SignalCount != 0)
